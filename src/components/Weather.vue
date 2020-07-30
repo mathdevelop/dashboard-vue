@@ -52,7 +52,7 @@ export default {
 
         params.append('localeId[]', id);
 
-        //Climatempo exibe que a cidade esteja cadastrada no Token que irá ser utilizado para as consultas
+        //Climatempo exige que a cidade esteja cadastrada no Token que irá ser utilizado para as consultas
         axios.put('https://cors-anywhere.herokuapp.com/http://apiadvisor.climatempo.com.br/api-manager/user-token/bf8defc9be7280bf51d5660b100729af/locales', params).then(() => {
           //Tive que utilizar a rota dos 15 dias, porque a rota do dia atual não retorna a probabilidade de chuva
           axios.get(`https://cors-anywhere.herokuapp.com/http://apiadvisor.climatempo.com.br/api/v1/forecast/locale/${ id }/days/15?token=bf8defc9be7280bf51d5660b100729af`).then(response => {
