@@ -1,24 +1,6 @@
-# dashboard360
+# Dashboard360
 
-## Project setup
-```
-npm install
-```
+**Dashboard360** was developed in order to present my knowledge of the Vue.js Framework *[Leia em Português](README.pt.md)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Demo
+[Dashboard360](https://dashboard360.netlify.app/)
